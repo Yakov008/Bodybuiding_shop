@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PARFENON</title>
   <link rel="icon" href="./img/Icon.jpg" type="image/x-icon">
-  <link rel="stylesheet" href="./css/discount.css">
+  <link rel="stylesheet" href="./css/basket.css">
   <link rel="stylesheet" href="./css/style.css">
   <script src="script.js"></script>
 </head>
@@ -18,23 +18,35 @@
       <a href="./index.html">Главная</a>
       <a href="./news.html">Новости</a>
       <a href="./products.html">Товары</a>
-      <a class="active" href="./discount.html">Скидки от Арни</a>
+      <a href="./discount.html">Скидки от Арни</a>
       <a href="./offers.html">Cвязь</a>
-      <a href="./questions.html">Корзина</a>
+      <a class="active" href="./basket.html">Корзина</a>
     </nav>
   </header>
   <section>
-    <aside>
-      <h3>Скидки от Арни</h3>
-      <div class="buttons">
-        <button class="secondary">Футболка от Арнольда</button>
-        <button class="secondary">Худи c Ронни Коулмэном</button>
-        <button class="secondary">Набор из Древней Греции</button>
-        <button class="secondary">Все для занятий дома</button>
-      </div>
-    </aside>
+    <h2>Корзина</h2>
     <article>
-      
+      <div class="products">
+        <table>
+          <thead>
+            <tr>
+              <td>Наименование</td>
+              <td>Вид</td>
+              <td>Стоимость</td>
+              <td>Количество</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="empty">
+              <td colspan="4">Корзина пуста</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="itog">
+        <h3>Итого</h3>
+        <p class="total-price">0 руб</p>
+      </div>
     </article>
   </section>
   <footer>
