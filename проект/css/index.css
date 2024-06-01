@@ -6,7 +6,7 @@
 }
 
 .line img {
-    width: 50px;
+    width: 3em;
 }
 
 section {
@@ -16,6 +16,7 @@ section {
 }
 
 .home-welcome {
+    margin-top: 6%;
     width: 100%;
     padding: 50px 0;
     display: flex;
@@ -41,6 +42,11 @@ section {
     margin: 0;
 }
 
+.home-welcome aside {
+    display: flex;
+    justify-content: center;
+}
+
 .home-welcome aside img {
     width: 30vw;
     border-radius: 8px;
@@ -59,4 +65,49 @@ section {
 
 .home-products p {
     width: 82%;
+}
+
+@media (max-width: 600px) {
+    .line img {
+        width: 1em;
+    }
+
+    .home-welcome {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .home-welcome article {
+        width: 80%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home-welcome article h3 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .home-welcome article p {
+        font-size: 0.8em;
+    }
+
+    .home-welcome aside img {
+        width: 90%;
+        justify-content: center;
+    }
+
+    .home-products {
+        font-size: 0.8em;
+    }
+
+    .home-products button {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 484px) {
+    .line img {
+        width: 0.5em;
+    }
 }

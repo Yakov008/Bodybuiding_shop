@@ -1,26 +1,28 @@
-
 section {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 200vh;
     align-content: center;
     background-color: var(--bg-color);
     gap: 40px;
 }
 
-.catalog{
+.catalog {
     margin-top: 6%;
     text-align: center;
     font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
 .products {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    justify-items: center;
-    width: 100%;
-    height: 100%;
+    gap: 30px;
+    width: 90%;
 }
 
 .item {
@@ -29,19 +31,61 @@ section {
     border-radius: 10px;
     border: 2px solid var(--bg-color-secondary);
     box-shadow: 0 0 5px var(--bg-color-secondary);
-    width: 75%;
-    height: 90%;
     color: var(--text-color-secondary);
     background-color: var(--primary-color);
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     transition: var(--transition);
     cursor: pointer;
+    padding: 20px 0;
 }
-.item img{
+
+.item img {
     width: 150px;
     border-radius: 10%;
 }
-.item p{
+
+.item p {
     font-size: x-large;
+}
+
+@media (max-width: 600px) {
+    .catalog h1 {
+        font-size: 1em;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+        align-self: center;
+    }
+
+    .item img {
+        width: 50%;
+    }
+
+    .item p {
+        font-size: 0.7em;
+    }
+
+    .item button {
+        font-size: 0.5em;
+    }
+}
+
+@media (max-width: 376px) {
+    .products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .item button {
+        font-size: 0.4em;
+    }
+
+    .item p {
+        font-size: 0.5em;
+    }
+
+    .item img {
+        width: 70%;
+    }
 }

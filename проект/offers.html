@@ -1,64 +1,99 @@
 <!DOCTYPE HTML>
 <html lang="ru">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PARFENON</title>
-  <link rel="icon" href="./img/Icon.jpg" type="image/x-icon">
-  <link rel="stylesheet" href="./css/offers.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <script src="script.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARFENON</title>
+    <link rel="icon" href="./img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/offers.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="js/questions.js"></script>
 </head>
-
 <body>
-  <header>
+<header>
     <h1 class="logo">PARFENON</h1>
     <nav>
-      <a href="./index.html">Главная</a>
-      <a href="./news.html">Новости</a>
-      <a href="./products.html">Товары</a>
-      <a href="./discount.html">Скидки от Арни</a>
-      <a class="active" href="./offers.html">Cвязь</a>
-      <a href="./basket.html">Корзина</a>
+        <a href="./index.html">Главная</a>
+        <a href="./news.html">Новости</a>
+        <a href="./products.html">Товары</a>
+        <a href="./discount.html">Скидки от Арни</a>
+        <a class="active" href="./offers.html">Cвязь</a>
+        <a href="./basket.html">Корзина</a>
     </nav>
-  </header>
-  <section>
-    <aside>
-      <h2>Связаться с нами</h2>
-      <p>Если у вас есть какие-либо предложения
-        по поводу внедрения новых функций или же вопросы по поступлению
-        и добавлению новых товаров, то пишите нам. Ваше мнение очень важно для нас! Ведь
-        мы стараемся помочь вам достичь посталвенных целей, как можно быстрее. С уважением, ваш PARFENON.
-      </p>
-      <div class="info">
-        <p class="info-item">8(000)-000-00-00</p>
-        <p class="info-item">support@mail.ru</p>
-      </div>
-    </aside>
-    <article>
-      <form action method="post">
-        <div class="input">
-          <label for="name">Ваше имя:</label>
-          <input type="text" id="name" placeholder="Яков" required><br>
+</header>
+<section>
+    <div class="feedback">
+        <aside>
+            <h2>Связаться с нами</h2>
+            <p>Если у вас есть какие-либо предложения
+                по поводу внедрения новых функций или же вопросы по поступлению
+                и добавлению новых товаров, то пишите нам. Ваше мнение очень важно для нас! Ведь
+                мы стараемся помочь вам достичь посталвенных целей, как можно быстрее. С уважением, ваш PARFENON.
+            </p>
+            <div class="info">
+                <p class="info-item">8(000)-000-00-00</p>
+                <p class="info-item">support@mail.ru</p>
+            </div>
+        </aside>
+        <article>
+            <form action method="post">
+                <div class="input">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" placeholder="Яков" required><br>
+                </div>
+                <div class="input">
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email" placeholder="support@mail.ru" required><br>
+                </div>
+                <div class="input">
+                    <label for="offers">Ваши пожелания:</label>
+                    <textarea id="offers" placeholder="Здесь должен быть ваш текст" required></textarea><br>
+                </div>
+                <button type="submit">Отправить</button>
+            </form>
+        </article>
+    </div>
+    <div class="quetions">
+        <h2>Частые вопросы</h2>
+        <div class="button">
+            <button>Что мне делать если доставка задерживается? <img src="./img/arrays.jpg"></button>
+            <div class="answer">
+                <p>Если доставка задерживается, свяжитесь с нашей службой поддержки для получения дополнительной
+                    информации.</p>
+            </div>
         </div>
-        <div class="input">
-          <label for="email">Ваш email:</label>
-          <input type="email" id="email" placeholder="support@mail.ru" required><br>
+        <div class="button">
+            <button>Сколько будет длиться доставка? <img src="./img/arrays.jpg"></button>
+            <div class="answer">
+                <p>Доставка обычно занимает от 3 до 7 рабочих дней, в зависимости от вашего местоположения.</p>
+            </div>
         </div>
-        <div class="input">
-          <label for="offers">Ваши пожелания:</label>
-          <textarea id="offers" placeholder="Здесь должен быть ваш текст" required></textarea><br>
+        <div class="button">
+            <button>А у вас товар качественный? <img src="./img/arrays.jpg"></button>
+            <div class="answer">
+                <p>Мы гарантируем высокое качество всех наших товаров. Если у вас есть какие-либо вопросы или проблемы,
+                    пожалуйста, свяжитесь с нами.</p>
+            </div>
         </div>
-        <button type="submit">Отправить</button>
-      </form>
-    </article>
-  </section>
-  <footer>
+        <div class="button">
+            <button>Можно ли оплатить товар на пункте выдачи? <img src="./img/arrays.jpg"></button>
+            <div class="answer">
+                <p>Да, вы можете оплатить товар на пункте выдачи наличными или банковской картой.</p>
+            </div>
+        </div>
+        <div class="button">
+            <button>Могу ли я оформить возврат товара? <img src="./img/arrays.jpg"></button>
+            <div class="answer">
+                <p>Да, вы можете оформить возврат товара в течение 14 дней с момента получения. Пожалуйста, свяжитесь с
+                    нашей службой поддержки для получения подробной информации.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
     <p><a href="https://vk.com/yakov.abornev138">Мы во VKontakte</a></p>
     <h1 class="logo">PARFENON</h1>
     <p>&copy Yakov Abornev</p>
-  </footer>
+</footer>
 </body>
-
 </html>

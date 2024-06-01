@@ -1,0 +1,74 @@
+{
+  "catalog": [
+    {
+      "id": 1,
+      "title": "Гантели",
+      "image": "./img/ganteli.jpg",
+      "price": "3999 руб.",
+      "description": "Гантели"
+    },
+    {
+      "id": 2,
+      "title": "Гири",
+      "image": "./img/giri.png",
+      "price": "1699 руб.",
+      "description": "Гири"
+    },
+    {
+      "id": 3,
+      "title": "Гантели",
+      "image": "./img/ganteli.jpg",
+      "price": "3999 руб.",
+      "description": "Гантели"
+    },
+    {
+      "id": 4,
+      "title": "Гири",
+      "image": "./img/giri.png",
+      "price": "1699 руб.",
+      "description": "Гири"
+    },
+    {
+      "id": 5,
+      "title": "Гантели",
+      "image": "./img/ganteli.jpg",
+      "price": "3999 руб.",
+      "description": "Гантели"
+    },
+    {
+      "id": 6,
+      "title": "Гири",
+      "image": "./img/giri.png",
+      "price": "1699 руб.",
+      "description": "Гири"
+    },
+    {
+      "id": 7,
+      "title": "Гантели",
+      "image": "./img/ganteli.jpg",
+      "price": "3999 руб.",
+      "description": "Гантели"
+    },
+    {
+      "id": 8,
+      "title": "Гири",
+      "image": "./img/giri.png",
+      "price": "1699 руб.",
+      "description": "Гири"
+    },
+    {
+      "id": 9,
+      "title": "Гантели",
+      "image": "./img/ganteli.jpg",
+      "price": "3999 руб.",
+      "description": "Гантели"
+    },
+    {
+      "id": 10,
+      "title": "Гири",
+      "image": "./img/giri.png",
+      "price": "1699 руб.",
+      "description": "Гири"
+    }
+  ]
+}

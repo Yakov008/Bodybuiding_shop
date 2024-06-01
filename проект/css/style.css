@@ -6,8 +6,8 @@
 @font-face {
     font-family: 'MyFontTwo';
     src: url(../shrifts/Hero/Hero-Bold.ttf),
-        url(../shrifts/Hero/Hero-Light.ttf),
-        url(../shrifts/Hero/Hero-Regular.ttf);
+    url(../shrifts/Hero/Hero-Light.ttf),
+    url(../shrifts/Hero/Hero-Regular.ttf);
 }
 
 :root {
@@ -27,13 +27,14 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color-black);
     font-family: 'MyFontTwo', serif;
-    font-size: large;
+    font-size: 1.2em;
 }
 
 header {
     color: var(--text-color);
     display: flex;
     position: fixed;
+    top: 0;
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
@@ -44,7 +45,7 @@ header {
 }
 
 h1.logo {
-    font-size: 60px;
+    font-size: 3em;
     margin: 0;
     font-family: 'MyFont', serif;
 }
@@ -53,7 +54,7 @@ header nav {
     display: flex;
     justify-content: space-around;
     gap: 35px;
-    font-size: large;
+    font-size: 1em;
 }
 
 header nav a.active {
@@ -114,7 +115,7 @@ button.secondary:hover {
     color: var(--bg-color);
 }
 
-button.third{
+button.third {
     background: var(--bg-color-secondary);
     color: var(--text-color);
     box-shadow: none;
@@ -124,4 +125,56 @@ button.third{
 button.third:hover {
     background: var(--primary-color);
     color: var(--text-color-black);
+}
+
+p.total-price {
+    margin: 0;
+    font-size: 30px;
+}
+
+@media (max-width: 600px) {
+    section {
+        margin-top: 80px;
+    }
+
+    h1.logo {
+        font-size: 1.7em;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    header nav {
+        gap: 15px;
+        font-size: 0.7em;
+    }
+
+    header {
+        padding-left: 5px;
+    }
+
+    footer h1.logo {
+        font-size: 1.7em;
+    }
+
+    footer p {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 445px) {
+    h1.logo {
+        font-size: 1.2em;
+    }
+
+    header nav {
+        font-size: 0.4em;
+        gap: 15px;
+    }
+
+    header {
+        padding-left: 5px;
+    }
 }

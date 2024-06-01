@@ -1,22 +1,140 @@
-
 section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 90vh;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    min-height: 60px;
 }
 
 article {
     display: flex;
-    width: 60%;
+    width: 75%;
     justify-content: space-between;
     align-items: start;
     gap: 30px;
 }
-h2{
-    margin-top: 6%;
+
+h2 {
     font-size: 40px;
 }
-button{
+
+button {
     font-size: large;
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 30px;
+}
+
+.products {
+    flex-basis: 80%;
+}
+
+.itog {
+    position: sticky;
+    top: 110px;
+    flex-basis: 18%;
+    padding: 30px;
+    border: var(--border);
+    border-radius: 5%;
+    background: var(--primary-color);
+    color: var(--text-color-secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+    font-size: 20px;
+}
+
+.products table {
+    transition: opacity 0.3s ease;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.products table thead {
+    font-weight: 600;
+    font-size: 22px;
+    background: var(--primary-color);
+    color: var(--text-color-secondary);
+}
+
+.products table td {
+    padding: 14px;
+}
+
+.products table td:nth-child(2) {
+    width: 18%;
+}
+
+.products table td:nth-child(3) {
+    width: 15%;
+}
+
+.products table tbody tr.empty {
+    text-align: center;
+    width: 100%;
+}
+
+.products table tbody tr.empty td {
+    padding: 80px;
+}
+
+.products table tbody tr td:nth-child(3) {
+    display: flex;
+    gap: 20px;
+}
+
+input {
+    font-family: 'MyFontTwo', serif;
+    padding: 8px 15px;
+    outline: 0;
+    background: var(--bg-color);
+    color: var(--text-color-secondary);
+    border: 2px solid var(--bg-color-secondary);
+    transition: var(--transition);
+    font-size: 18px;
+    width: 40px;
+}
+
+@media (max-width: 600px) {
+    h2 {
+        margin-top: 10%;
+        font-size: 1.5em;
+    }
+
+    .card-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .itog {
+        padding: 20px;
+        font-size: 0.7em;
+        width: 50%;
+        align-items: center;
+    }
+
+    .products table thead {
+        font-size: 0.7em;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    .itog .total-price {
+        font-size: 1.5em;
+    }
+
+    .products table tbody {
+        width: 40%;
+    }
 }

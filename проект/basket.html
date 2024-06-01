@@ -1,59 +1,58 @@
 <!DOCTYPE HTML>
 <html lang="ru">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PARFENON</title>
-  <link rel="icon" href="./img/Icon.jpg" type="image/x-icon">
-  <link rel="stylesheet" href="./css/basket.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <script src="script.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARFENON</title>
+    <link rel="icon" href="./img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/basket.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="js/basket.js"></script>
 </head>
-
 <body>
-  <header>
+<header>
     <h1 class="logo">PARFENON</h1>
     <nav>
-      <a href="./index.html">Главная</a>
-      <a href="./news.html">Новости</a>
-      <a href="./products.html">Товары</a>
-      <a href="./discount.html">Скидки от Арни</a>
-      <a href="./offers.html">Cвязь</a>
-      <a class="active" href="./basket.html">Корзина</a>
+        <a href="./index.html">Главная</a>
+        <a href="./news.html">Новости</a>
+        <a href="./products.html">Товары</a>
+        <a href="./discount.html">Скидки от Арни</a>
+        <a href="./offers.html">Cвязь</a>
+        <a class="active" href="./basket.html">Корзина</a>
     </nav>
-  </header>
-  <section>
+</header>
+<section>
     <h2>Корзина</h2>
     <article>
-      <div class="products">
-        <table>
-          <thead>
-            <tr>
-              <td>Наименование</td>
-              <td>Вид</td>
-              <td>Стоимость</td>
-              <td>Количество</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="empty">
-              <td colspan="4">Корзина пуста</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="itog">
-        <h3>Итого</h3>
-        <p class="total-price">0 руб</p>
-      </div>
+        <div class="card-container">
+            <div class="products">
+                <table>
+                    <thead>
+                    <tr>
+                        <td>Наименование</td>
+                        <td>Стоимость</td>
+                        <td>Количество</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="empty">
+                        <td colspan="4">Корзина пуста</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="itog">
+                <h3>Итого</h3>
+                <p class="total-price">0 руб</p>
+            </div>
+        </div>
     </article>
-  </section>
-  <footer>
+    <button class="pay-btn">Оплатить</button>
+</section>
+<footer>
     <p><a href="https://vk.com/yakov.abornev138">Мы во VKontakte</a></p>
     <h1 class="logo">PARFENON</h1>
     <p>&copy Yakov Abornev</p>
-  </footer>
+</footer>
 </body>
-
 </html>
